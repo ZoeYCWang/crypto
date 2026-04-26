@@ -1,0 +1,79 @@
+/** Define Theme Constants here */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+    useLargerTextScaleBool: true;
+}
+
+/** Style for Button class */
+Button {
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
+
+/** Style for App Title Bar Text */
+Title {
+    font-family: "native:MainLight";
+    font-size: 6mm;
+}
+
+/** Style for Dialog body */
+DialogBody {
+    font-family: "native:MainLight";
+    font-size: 2.8mm;
+}
+
+/** Style for Dialog title bar text */
+DialogTitle {
+    font-family: "native:MainLight";
+    font-size: 4.5mm;
+}
+
+/** Style for the side menu */
+SideNavigationPanel {
+    background: white;
+    padding: 2mm 1mm 1mm 1mm;
+}
+
+@media platform-ios {
+    /** iOS Only styles for side menu. */
+    SideNavigationPanel {
+        /** Extra top padding to deal with notch on iPhoneX */
+        padding: 6mm 1mm 1mm 1mm;
+    }
+}
+
+/** Style for commands in side menu. */
+SideCommand {
+    padding: 1mm;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-family: "native:MainLight";
+    font-size: 4mm;
+    border-bottom: 2px solid #cccccc;
+}
+
+EditProfileField{
+    color: black;
+    background-color: rgba(0,0,0,0);
+    border-radius: 1mm;
+    margin: 2mm;
+    padding: 2mm;
+    border: 0.3mm solid #e4e7e7;
+    font-family: "native:MainRegular";
+    font-size: 3mm;
+}
+
+EditProfileSaveButton{
+    background-color: #7AC943;
+    color: white;
+    border-radius: 4mm;
+    text-align: center;
+    padding: 2mm;
+    margin: 2mm;
+}
+
+EditProfileSaveButton.pressed{
+    background-color: #9bdf6c;
+}
